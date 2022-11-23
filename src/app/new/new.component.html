@@ -1,0 +1,13 @@
+<form #simpleform="ngForm" (ngSubmit)="postcustdata(simpleform.value)">
+    <input type = "text" name = "CustomerName" ngModel placeholder="Enter your name">
+    <br><br>
+    <input type = "text" name = "CustomerEmail" ngModel placeholder="Enter your email">
+    <br><br>
+    <input type = "int" name = "CustomerMobile" ngModel placeholder="Enter your Mobile Number">
+    <br><br>
+    <input type = "text" name = "CustomerAddress" ngModel placeholder="Enter your Address">
+    <br><br>
+    <input type = "password" name = "CustomerPassword" ngModel placeholder="Enter your Password">
+    <br><br>
+    <button type="submit">Submit</button>
+</form>

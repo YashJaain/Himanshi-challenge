@@ -1,0 +1,27 @@
+<p>paymentlist works!</p>
+<table border = 5>
+    <tr>
+        <th>Payment ID</th>
+        <th>Payment Date</th>
+        <!-- <th>Customer ID</th> -->
+        <!-- <th>Customer Name</th> -->
+        <th>Bill Id</th>
+        <th>Payment Status</th>
+    </tr>
+    <tr *ngFor="let user of userData">
+        <!-- <div *ngIf="user.CustomerId==2"> -->
+        <td>{{user.PaymentId}}</td>
+        <td>{{user.PaymentDate}}</td>
+        <td>{{user.BillId}}</td>
+        <td>{{user.PaymentStatus}}</td>
+        <!-- <td>{{user.CustomerId}}</td> -->
+        <!-- <td>
+            <div *ngFor="let cust of custData">
+                <div *ngIf="cust.CustomerId==user.CustomerId">
+                    <a>{{cust.CustomerName}}</a>
+                </div>
+            </div>
+        </td> -->
+        
+    </tr>
+</table>

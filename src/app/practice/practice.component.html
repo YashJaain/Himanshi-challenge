@@ -1,0 +1,16 @@
+
+<table> 
+    
+    <tr *ngFor="let user of userData"> 
+        <div *ngIf="user.CustomerId==data"> 
+        <td>{{user.CustomerId}}</td>
+        <td>{{user.CustomerName}}</td>
+        <td>{{user.CustomerEmail}}</td>
+        <td>{{user.CustomerMobile}}</td>
+        <td>{{user.CustomerAddress}}</td>
+        <td>{{user.CustomerPassword}}</td> 
+        </div>
+    </tr>
+</table>
+
+
