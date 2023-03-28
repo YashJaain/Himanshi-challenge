@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <form #formdata="ngForm" (ngSubmit)="fetchdata(formdata.value)">
+            <label>Username</label>
+            <input type=text ngModel name="username">
+            <label>Mobile</label>
+            <input type=number ngModel name="mobile">
+            <label>Email</label>
+            <input type=text ngModel name="email">
+            <label>Address</label>
+            <input type=text ngModel name="address">
+            <label>Password</label>
+            <input type=text ngModel name="password">
+            <button type="submit">Submit</button>
+            </form>
+            <table class="table table-light">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Password</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{username}}</td>
+                        <td>{{email}}</td>
+                        <td>{{mobile}}</td>
+                        <td>{{address}}</td>
+                        <td>{{password}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

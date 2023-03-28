@@ -14,6 +14,23 @@ import { EmployeeListComponent } from '../employee-list/employee-list.component'
 
 
 export class PracticeComponent implements OnInit {
+  Username:string = "Enter username";
+ userlist:any=[];
+
+  onClick(prouser :any){
+    if(prouser.value.length>0){
+    this.userlist.push(prouser.value);
+    alert("User added successfully");
+    prouser.value="";
+    }
+    else{
+      alert("Please fill correct username");
+    }
+  }
+  onDelete(deleteme: any){
+    this.userlist.splice(deleteme, 1)
+    alert("User removed successfully");
+  }
   // ELEMENT_DATA: Element[]=[];
   data:any;
   userData:any=[];
@@ -21,7 +38,9 @@ export class PracticeComponent implements OnInit {
     this.userdataservice.getCustData().subscribe(dataa=>{
       this.userData=dataa;
     })
+   
   }
+  
   
 
 

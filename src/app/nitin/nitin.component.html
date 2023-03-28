@@ -1,0 +1,40 @@
+<div class="container mt-5">
+<div class="row">
+<div class="col-md-12">
+    <form>
+    <input type="text" #mrform1 class="form-control" placeholder="Enter Username">
+    <input type="number" #mrform2 class="form-control" placeholder="Enter Mobile">
+    <input type="text" #mrform3 class="form-control" placeholder="Enter Email">
+    <input type="text" #mrform4 class="form-control" placeholder="Enter Address">
+    <input type="password" #mrform5 class="form-control" placeholder="Enter Password">
+    <button (click)="hello(mrform1,mrform2,mrform3,mrform4,mrform5)" class="btn btn-danger mt-3">Click Me</button>
+    </form>
+</div>
+<table class="table table-light mt-3">
+    <thead class="thead-light">
+        <tr>
+            <th>Sr.no</th>
+            <th>User name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Password</th>
+            <th>Address</th>
+            <th>Delete user</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of username;index as userno">
+            <td>{{userno + 1}}</td>
+            <td>{{i}}</td>
+            <td *ngFor="let j of email">{{j}}</td>
+            <td *ngFor="let k of mobile">{{k}}</td>
+            <td *ngFor="let l of password">{{l}}</td>
+            <td *ngFor="let z of address">{{z}}</td>
+            <td>
+                <button (click)="delete(userno)" class="btn btn-success">Remove user</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>

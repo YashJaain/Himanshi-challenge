@@ -25,6 +25,11 @@ import { InvoiceComponent } from './invoice/invoice.component';
 // import { ChildComponent } from './child/child.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PaymentlistComponent } from './paymentlist/paymentlist.component';
+import { CardComponent } from './card/card.component';
+import { NitinComponent } from './nitin/nitin.component';
+import { Practice2Component } from './practice2/practice2.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
 
 
 @NgModule({
@@ -43,7 +48,12 @@ import { PaymentlistComponent } from './paymentlist/paymentlist.component';
     // ParentComponent,
     // ChildComponent,
     ProfileComponent,
-    PaymentlistComponent
+    PaymentlistComponent,
+    CardComponent,
+    NitinComponent,
+    Practice2Component,
+    Sibling1Component,
+    Sibling2Component
   ],
   imports: [
     BrowserModule,
